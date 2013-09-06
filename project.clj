@@ -1,4 +1,4 @@
-(defproject nrepl-main "0.1.0"
+(defproject nrepl-main "0.1.1-SNAPSHOT"
   :description "Provide a main for running an nrepl server."
   :url "https://github.com/pallet/nrepl-main"
   :license {:name "Eclipse Public License"
