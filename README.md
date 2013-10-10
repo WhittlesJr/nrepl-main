@@ -7,7 +7,7 @@ A Clojure library to provide a `-main` function for starting an [nREPL][nrepl] s
 Add the library to your `:dependencies` in `project.clj`.
 
 ```clj
-:dependencies [[nrepl-main "0.1.0"]]
+:dependencies [[nrepl-main "0.1.1"]]
 ```
 
 If you wish to have the main as the default main in your jar or uberjar file, then
