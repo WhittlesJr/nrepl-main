@@ -72,7 +72,6 @@
   (if dispatch
     (resolve-sym-name dispatch)
     (let [mw (map resolve-sym-name (when middleware (split middleware #",")))]
-      (println "mw" (pr-str (vec mw)))
       (apply default-handler
              (map resolve-sym-name (when middleware (split middleware #",")))))))
 
@@ -80,7 +79,6 @@
   [{:keys [port bind ack-port verbose dispatch middleware port-file]
     :as options}]
   (let [options (select-keys options [:bind :port :ack-port])
-        _ (println "options" (pr-str options))
         server (apply start-server
                       :handler (handler dispatch middleware)
                       (apply concat options))
